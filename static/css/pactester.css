@@ -1,0 +1,122 @@
+
+/* Copyright Stephen Vickers (vortex.is.at@gmail.com) 2012 */
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: blue;
+}
+
+#author {
+	text-align: center;
+	width: 100%;
+	color: grey;
+	margin: 15px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: Arial,sans-serif;
+}
+
+#center {
+	float: left;
+	width: 80%;
+	height: 100%;
+}
+
+#config {
+	height: 200px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#config-dns {
+	width: 48%;
+	float: left;
+}
+
+#config-items {
+	width: 48%;
+	float: left;
+}
+
+#config-sep {
+	float: left;
+	width: 4%;
+}
+
+#dns {
+	width: 100%;
+	height: 133px;
+}
+
+.green {
+	color: green;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.item-label {
+	color: grey;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#left {
+	float: left;
+	width: 10%;
+	height: 100%;
+}
+
+#pac {
+	width: 100%;
+	height: 230px;
+}
+
+#pac-container {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.red {
+	color: red;
+}
+
+#result {
+	margin: 15px;
+}
+
+#right {
+	float: left;
+	width: 9%;
+	height: 100%;
+}
+
+textarea {
+	font-size: 13px;
+}
+
+#version {
+	margin: 15px;
+	font-size: 28px;
+	font-weight: bold;
+	color: rgb(201, 201, 201);
+}
+

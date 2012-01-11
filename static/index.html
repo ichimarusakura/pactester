@@ -1,0 +1,52 @@
+<html>
+	<!-- Copyright Stephen Vickers (vortex.is.at@gmail.com) 2012 -->
+	<head>
+		<title>PAC Tester</title>
+		<link type="text/css" href="css/pactester.css" rel="stylesheet" />
+		<script src="js/jquery-1.7.1.min.js"></script>
+		<script src="js/jquery.textarea-0.11.js"></script>
+		<script src="js/pactester.js"></script>
+	<head>
+	<body>
+		<div id=left></div>
+		<div id=center>
+			<div id=version></div>
+			<div id=result><font style="color: blue;">As you modify and
+					click out of each field below a proxy will be calculated
+					using the specified parameters and displayed here.</font></div>
+			<div id=config>
+				<div id=config-items>
+					<div class=item>
+						<div class=item-label>My IP Address (to emulate the
+								myIpAddress() function)</div>
+						<input type=text id=my_ip value=127.0.0.1>
+					</div>
+					<div class=item>
+						<div class=item-label>URL</div>
+						<input type=text id=url value=http://www.test.com>
+					</div>
+					<div class=item>
+						<div class=item-label>Host</div>
+						<input type=text id=host value=www.test.com>
+					</div>
+				</div>
+				<div id=config-sep>
+					&nbsp
+				</div>
+				<div id=config-dns>
+					<div class=item-label>DNS Lookup Maps (to emulate the
+							dnsResolve() function)</div>
+					<textarea id=dns></textarea>
+				</div>
+			</div>
+			<div id=pac-container>
+				<div class=item-label>PAC File Contents (this JavaScript will
+						be eval'ed in your browser and the FindProxyForUrl() function
+						called to locate a proxy)</div>
+				<textarea id=pac></textarea>
+			</div>
+			<div id=author>&copy; 2012 <a href=mailto:vortex.is.at@gmail.com>Stephen Vickers</a></div>
+		</div>
+		<div id=right></div>
+	</body>
+</html>
