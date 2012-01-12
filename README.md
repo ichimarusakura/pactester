@@ -3,17 +3,10 @@
 
 pactester - Proxy Auto Configuration File Tester
 
-# Installation & Running
+# Synopsis
 
-Firstly download and install the latest version of [node.js](http://nodejs.org).  Then grab the latest version of *pactester* and unzip *pactester*:
+Simply download, unzip and open *pactester-<version>.html*.
 
-    gunzip pactester-<version>.js.gz
+# Author
 
-Then simply run:
-
-	# use default port 8000
-	node pactester-<version>.js
-
-	# use port 8001
-	node pactester-<version>.js 8001
-
+Stephen Vickers <vortex.is.at@gmail.com>

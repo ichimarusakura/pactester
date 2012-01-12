@@ -1,0 +1,28 @@
+#! perl
+
+use strict;
+
+sub load {
+	open my $fh, $_[0]
+		or die "open $_[0] failed: $!";
+	[<$fh>]
+}
+
+sub unload {
+	open my $fh, ">$_[0]"
+		or die "open $_[0] failed: $!";
+	print $fh $_ for @{ $_[1] }
+}
+
+die "usage: $0 <from> <to> <file>\n"
+	unless @ARGV == 3;
+
+my ($from, $to, $file) = @ARGV;
+
+my $lines = load $file;
+
+for (@$lines) {
+	s/\Q$from\E/$to/g;
+}
+
+unload $file, $lines;

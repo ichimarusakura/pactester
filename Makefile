@@ -8,8 +8,6 @@ clean:
 
 generic-install:
 	-mkdir install
-	cp -r static install
-	echo $(VERSION) > install/static/version.txt
-	perl tools/embed-files install/static pactester.js install/pactester-$(VERSION).js
-	gzip install/pactester-$(VERSION).js
-	rm -rf install/static
+	cp pactester.html install/pactester-$(VERSION).html
+	perl tools/set "@@VERSION@@" $(VERSION) install/pactester-$(VERSION).html
+	zip install/pactester-$(VERSION).js
