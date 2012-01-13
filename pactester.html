@@ -644,9 +644,12 @@ $(document).ready (function (){
 		testPac ();
 	}).val (defaultDns);
 
+	$("#url").val ("http://www.test.com");
+	$("#host").val ("www.test.com");
+
 	$("#my_ip").change (function () {
 		testPac ();
-	});
+	}).focus ().val ("127.0.0.1");
 
 	$("#url").change (function () {
 		var host = $("#url").val ();
@@ -801,15 +804,15 @@ $(document).ready (function (){
 					<div class=item>
 						<div class=item-label>My IP Address (to emulate the
 								myIpAddress() function)</div>
-						<input type=text id=my_ip value=127.0.0.1>
+						<input type=text id=my_ip>
 					</div>
 					<div class=item>
 						<div class=item-label>URL</div>
-						<input type=text id=url value=http://www.test.com>
+						<input type=text id=url>
 					</div>
 					<div class=item>
 						<div class=item-label>Host</div>
-						<input type=text id=host value=www.test.com>
+						<input type=text id=host>
 					</div>
 				</div>
 				<div id=config-sep>
