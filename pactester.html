@@ -513,11 +513,11 @@ function ok (html) {
 
 // Copied from the HTTP::ProxyPAC::Functions CPAN module.
 function shExpMatch(url, pattern) {
-	pattern = pattern.replace (/\\./g, '\\\\.');
-	pattern = pattern.replace (/\\*/g, '.*');
-	pattern = pattern.replace (/\\?/g, '.');
-	var newRe = new RegExp ('^'+pattern+'\$');
-	return newRe.test (url);
+	pattern = pattern.replace(/\./g, '\\.');
+	pattern = pattern.replace(/\*/g, '.*');
+	pattern = pattern.replace(/\?/g, '.');
+	var newRe = new RegExp('^'+pattern+'$');
+	return newRe.test(url);
 }
 
 function testPac () {
