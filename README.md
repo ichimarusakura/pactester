@@ -29,7 +29,7 @@ This tool was developed after I saw what someone had to go through to get a
 PAC file implemented for a Bluecoat appliance, had this tool been around it
 would have made the PAC file writing part a little easier - I think :)
 
-![screenshot](https://bitbucket.org/stephenwvickers/pactester/src/e96b47880aae/screenshots/pactester.png)
+![screenshot](https://bitbucket.org/stephenwvickers/pactester/raw/10eaf05a9105/screenshots/pactester.png)
 
 # License
 
